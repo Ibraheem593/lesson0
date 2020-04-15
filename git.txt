@@ -1,0 +1,195 @@
+<!Doctype html>
+<html>
+    <head>
+	<metaname="viewport" 
+	content="width=device-width, initial-scale=1">	
+	<style>
+		.container {
+		display: inline-block;
+		cursor: pointer;
+		}
+		* 
+		.topnav .search-container {
+		float: right;
+		}
+		
+		.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+		}
+		
+		/* Rotate first bar */
+		.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+		transform: rotate(-45deg) translate(-9px, 6px) ;
+		}
+		
+		/* Fade out the second bar */
+		.change .bar2 {
+		opacity: 0;
+		}
+		
+		/* Rotate last bar */
+		.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+		transform: rotate(45deg) translate(-8px, -8px) ;
+		}
+		*{
+		box-sizing: boarder-box;
+		}
+		.column {
+		float: left;
+		padding:10px;
+		height:300px;
+		}
+		.left, .right{
+		width:25%;
+		}
+		.middle{
+			width: 25%;
+		}
+		.row:after{
+			content:"";
+			display:table;
+			clear:both;
+		}
+		div{
+		border-radius:5px;  
+		background:rgba(255, 255, 255, 0.192);
+		}
+		
+		#header{
+		height:43px;
+		width:400px;
+		border:1px rgba(255, 255, 255, 0.315);
+		background-color:yellow;
+		position:fixed;
+		z-index:1;
+		}
+		
+		#footer{
+		color:rgba(255, 255, 255, 0.301);
+		width:450px;
+		height:443px;
+		border:2px blue;
+		clear:both;
+		background-color:black;
+		}
+		
+		.button {
+		display: inline-block;
+		padding: 15px 25px;
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		
+		text-decoration: none;
+		outline: none;
+		color: rgb(255, 255, 255);
+		background-color: #4CAF50;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px rgba(255, 255, 255, 0.301);
+		}
+		
+		.button:active {
+		background-color: #3e8e41;
+		box-shadow: 5px #666;
+		transform: translateY(4px);
+		}
+		ul{
+			list-style-type: none
+			
+		}
+		.p {
+ 				 position: absolute;
+  					bottom: 20px;
+  					right: 16px;
+ 				 font-size: 18px;
+			}
+
+		</style>
+		
+</head>
+<body style="background-color: turquoise;">
+	
+	<div class="topnav">
+		<a class="active" href="#home"></a>
+		<br><a href="#about"></a></br>
+		<a href="#contact"></a> <br>
+		<div class="search-container"><br>
+		  <form action="/action_page.php">
+			<input type="text" placeholder="Search.." name="search">
+		
+		  </form>
+		</div>
+	  </div>
+	  
+	<div class="container" onclick="myFunction(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+		  
+<div class="ROW">
+<div class="column 1"
+	style="background-color:#FFFFFF;">
+	<ul>
+		<a href="firstpage.html">
+        <li>About me</li>
+		<li>portfolio</li>
+		<li>members</li>
+		<li>contact</li>
+</a>
+    </ul>
+       </div>
+	   <div>
+<div class="column">
+    
+            <h1>IBRAHEEM ABDULQUDUS</h1>
+            <p>ABOUTME</p>
+<p><del>oya na </del></p>
+<p><ins>Resume review</ins></p>
+<h4><span>About me </span></h4>
+        <p>Hi my name is Ibraheem AbdulQudus I'm a UI/UX designer</p>
+	<p>i've been designing for about 6 months now</p>
+	<p>I love to work with creative individuals that</p>
+	<p> can bring strong critique as well as laugh at </p> 
+	<p> latest memes</p>
+
+	<h3><strong>EXPERIENCE</strong></h3>
+
+	<p>2016 to present PayPay Inc.</P>
+	<p> Programmer</P>
+<button>subscribe to our news letter</button>
+<h2> PROJECTS</h2>
+<p>Establishing design system artifacts</p>
+<p> processing to improve design across the</p>
+<p> range of products</p>
+	</div>
+<div>
+	<div class="column middle">
+		<img src="C:\Users\qudus\Desktop\Scanned Ajou Documents\image.jpg" alt="image" height="550" width="400"/>
+		<button class='btn btn-primary'>Hire Me</button>
+	</div>
+	
+	<div class="p">    
+		<li><a href="#">Resume</a></li>
+		<li><a href="#">LinkedIn</a></li>
+		<li><a href="#">Medium</a></li>
+	</div>		
+			
+		
+	<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+	
+</body>
+                                                                                                   
+</html>
